@@ -38,6 +38,8 @@ aa.oninput = () => {
   date.innerText = aa.value;
   if (parseInt(aa.value) > 12) {
     aa.value = "12";
+  date.innerText = aa.value;
+
   }
 };
 
