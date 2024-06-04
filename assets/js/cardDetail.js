@@ -36,9 +36,13 @@ aa.oninput = () => {
   if (aa.value.length > aa.maxLength)
     aa.value = aa.value.slice(0, aa.maxLength);
   date.innerText = aa.value;
+
   if (parseInt(aa.value) > 12) {
     aa.value = "12";
+  date.innerText = aa.value;
+
   }
+
 };
 
 yy.oninput = () => {
