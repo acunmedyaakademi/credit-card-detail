@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>İnteraktif Kart Detay Formu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/cardDetail.css">
+  <script src="assets/js/cardDetail.js" defer></script>
 </head>
+
 <body>
-  
+  <div class="container">
+    <div class="card">
+      <div class="card-back">
+        <div class="card-back-black"></div>
+        <div class="card-back-gray">
+          <p id="cardCvv"></p>
+        </div>
+      </div>
+      <div class="card-front">
+        <p id="cardNumber"></p>
+        <div class="cardName">
+          <p id="name"></p>
+          <div class="f">
+            <p id="date"></p>
+            <p id="date2"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cardDetail">
+      <div class="holderName">
+        <h6>Kart Sahibinin Adı</h6>
+        <input type="text" id="holderInput">
+      </div>
+      <div class="holderNumber">
+        <h6>Kart Numarası</h6>
+        <input type="number" id="numberInput" maxlength="16">
+      </div>
+      <div class="generalIpunts">
+        <div class="expDate">
+          <h6>Son Kullanma Tarihi</h6>
+          <label id="#aayy">
+            <input type="number" id="aa" min="1" max="12" maxlength="2">
+            <input type="number" id="yy" min="1" max="99" maxlength="2">
+          </label>
+        </div>
+        <div class="cvc">
+          <h6>CVC</h6>
+          <input type="number" id="cvInput" maxlength="3" min="1" max="999">
+        </div>
+      </div>
+      <button class="btn">ONAYLA</button>
+    </div>
+    <div class="checkContainer">
+      <img src="assets/img/onay.png">
+      <h3>TEŞEKKÜR EDERİM!</h3>
+      <p>Kart bilgilerinizi ekledik</p>
+      <button class="btn">DEVAM ET</button>
+    </div>
+  </div>
 </body>
+
 </html>
