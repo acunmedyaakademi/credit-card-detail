@@ -60,9 +60,13 @@ input {
   color: #21092f;
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .card {
   background-color: #21092f;
-  width: 100%;
   padding-top: 32px;
   height: 240px;
 }
@@ -94,16 +98,20 @@ input {
 }
 
 .card-back-gray {
+  display: flex;
+  align-items: center;
+  justify-content: end;
   margin: 0 auto;
   background-color: #adb5be;
   width: 230px;
   height: 30px;
   margin-top: 15px;
-  text-align: end;
+  padding-inline: 16px;
+  border-radius: 8px;
 }
 
 .card-front {
-  background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
+  background: linear-gradient(163.95deg, #6348fe 4.74%, #610595 88.83%);
   width: 285px;
   height: 155px;
   position: relative;
@@ -112,7 +120,6 @@ input {
   left: 30px;
   padding-inline: 20px;
   border-radius: 16px;
-
 }
 
 #cardNumber {
@@ -194,6 +201,7 @@ input {
 .generalIpunts {
   display: flex;
   gap: 15px;
+  margin-bottom: 32px;
 }
 
 #aayy {
@@ -309,6 +317,7 @@ input {
     line-height: 35.73px;
     text-align: left;
     color: #ffffff;
+    padding-top: 140px;
   }
 
   .cardName {
