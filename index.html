@@ -18,44 +18,46 @@
       <div class="card-back">
         <div class="card-back-black"></div>
         <div class="card-back-gray">
-          <p id="cardCvv"></p>
+          <p id="cardCvv">264</p>
         </div>
       </div>
       <div class="card-front">
-        <p id="cardNumber"></p>
+        <p id="cardNumber">0000 0000 0000 0000</p>
         <div class="cardName">
-          <p id="name"></p>
+          <p id="name">berat dimen</p>
           <div class="f">
-            <p id="date"></p>
-            <p id="date2"></p>
+            <p id="date">07</p>
+            <p id="date2">/29</p>
           </div>
         </div>
       </div>
     </div>
     <div class="cardDetail">
+      <form id="form">
       <div class="holderName">
         <h6>Kart Sahibinin Adı</h6>
-        <input type="text" id="holderInput">
+        <input required type="text" id="holderInput" placeholder="Örn. berat dimen">
       </div>
       <div class="holderNumber">
         <h6>Kart Numarası</h6>
-        <input type="number" id="numberInput" maxlength="16">
+        <input required type="number" id="numberInput" maxlength="16" placeholder="Örn. 0000 0000 0000 0000">
       </div>
       <div class="generalIpunts">
         <div class="expDate">
           <h6>Son Kullanma Tarihi</h6>
           <label id="#aayy">
-            <input type="number" id="aa" min="1" max="12" maxlength="2">
-            <input type="number" id="yy" min="1" max="99" maxlength="2">
+            <input required type="number" id="aa" min="1" max="12" maxlength="2" placeholder="07">
+            <input required type="number" id="yy" min="1" max="99" maxlength="2" placeholder="29">
           </label>
         </div>
         <div class="cvc">
           <h6>CVC</h6>
-          <input type="number" id="cvInput" maxlength="3" min="1" max="999">
+          <input required type="number" id="cvInput" maxlength="3" min="1" max="999" placeholder="264">
         </div>
       </div>
       <button class="btn">ONAYLA</button>
     </div>
+  </form>
     <div class="checkContainer">
       <img src="assets/img/onay.png">
       <h3>TEŞEKKÜR EDERİM!</h3>

@@ -12,6 +12,7 @@ let btn = document.querySelector(".btn");
 let checkContainer = document.querySelector(".checkContainer");
 let card = document.querySelector(".card");
 let cardDetail = document.querySelector(".cardDetail");
+let form =document.querySelector('#form');
 
 checkContainer.style.display = "none";
 
@@ -49,23 +50,13 @@ yy.oninput = () => {
   date2.innerText = "/" + yy.value;
 };
 
-// yy.addEventListener('focusout',() => {
-//   const dates = new Date()
-//   const newdate = dates.getFullYear().toLocaleString();
-//   const currentYear = newdate.substring(newdate.length-2);
-//   if (yy.value < currentYear) {
-//     yy.value = currentYear;
-//   } else if (yy.value > 50) {
-//     yy.value = 50;
 
-//   }
 
-// })
-
-function handleForm() {
+function handleForm(e) {
+  e.preventDefault();
   cardDetail.style.display = "none";
   checkContainer.style.display = "block";
 }
-btn.addEventListener("click", handleForm);
 
-function maxLengthCheck(object) {}
+form.addEventListener("submit", handleForm);
+
