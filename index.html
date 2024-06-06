@@ -22,6 +22,7 @@
         </div>
       </div>
       <div class="card-front">
+        <div class="oval"></div>
         <p id="cardNumber">0000 0000 0000 0000</p>
         <div class="cardName">
           <p id="name">berat dimen</p>
@@ -33,14 +34,14 @@
       </div>
     </div>
     <div class="cardDetail">
-      <form id="form">
+      <form id="form" name="omer">
       <div class="holderName">
         <h6>Kart Sahibinin Adı</h6>
-        <input required type="text" id="holderInput" placeholder="Örn. berat dimen">
+        <input required type="text" name="berat" id="holderInput" placeholder="Örn. berat dimen" autocomplete="off">
       </div>
       <div class="holderNumber">
         <h6>Kart Numarası</h6>
-        <input required type="number" id="numberInput" maxlength="16" placeholder="Örn. 0000 0000 0000 0000">
+        <input required type="number" id="numberInput" maxlength="16" autocomplete="off" placeholder="Örn. 0000 0000 0000 0000">
       </div>
       <div class="generalIpunts">
         <div class="expDate">
@@ -62,9 +63,11 @@
       <img src="assets/img/onay.png">
       <h3>TEŞEKKÜR EDERİM!</h3>
       <p>Kart bilgilerinizi ekledik</p>
-      <button class="btn">DEVAM ET</button>
+      <button class="btn contiune">DEVAM ET</button>
     </div>
   </div>
+
+  
 </body>
 
 </html>

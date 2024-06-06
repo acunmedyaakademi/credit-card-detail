@@ -30,6 +30,12 @@ select {
   font: inherit;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 p,
 h1,
 h2,
@@ -49,6 +55,7 @@ h6 {
   color: #21092f;
 }
 
+
 input {
   border-radius: 8px;
   border: 1px solid #dfdee0;
@@ -58,6 +65,7 @@ input {
   line-height: 22.97px;
   text-align: left;
   color: #21092f;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -69,6 +77,15 @@ input {
   background-color: #21092f;
   padding-top: 32px;
   height: 240px;
+  
+}
+
+.oval {
+  height: 46px;
+  width: 46px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-top: 20px;
 }
 
 .card-back {
@@ -120,6 +137,7 @@ input {
   left: 30px;
   padding-inline: 20px;
   border-radius: 16px;
+  padding-top: 20px;
 }
 
 #cardNumber {
@@ -267,7 +285,7 @@ input {
 @media (width >= 768px) {
   .container {
     display: flex;
-    gap: 350px;
+    gap: 250px;
     align-items: center;
   }
 
@@ -317,7 +335,7 @@ input {
     line-height: 35.73px;
     text-align: left;
     color: #ffffff;
-    padding-top: 140px;
+    padding-top: 65px;
   }
 
   .cardName {
